@@ -8,12 +8,11 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    
     @IBOutlet weak var mainCard: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-
-  
 
 }
