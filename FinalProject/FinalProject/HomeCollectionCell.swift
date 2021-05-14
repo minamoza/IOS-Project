@@ -8,8 +8,6 @@
 import UIKit
 
 class HomeCollectionCell: UICollectionViewCell {
-    
-    static let identifier = String(describing: HomeCollectionCell.self)
 
     @IBOutlet weak var CellImageView: UIImageView!
     @IBOutlet weak var DescLabel: UILabel!

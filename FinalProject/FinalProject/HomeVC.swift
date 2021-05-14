@@ -28,7 +28,6 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         mainCardView.layer.cornerRadius = 10
     }
-    
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource{

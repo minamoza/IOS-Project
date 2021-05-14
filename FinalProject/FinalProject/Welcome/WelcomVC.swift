@@ -40,7 +40,7 @@ class WelcomVC: UIViewController {
     
     @IBAction func nextPage(_ sender: UIButton) {
         if currentPage == slides.count - 1{
-            let controller = storyboard?.instantiateViewController(identifier: "ProfileFirstVC") as! UIViewController
+            let controller = storyboard?.instantiateViewController(identifier: "HomeNC") as! UITabBarController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
             self.present(controller, animated: true, completion: nil)

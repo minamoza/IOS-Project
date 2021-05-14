@@ -7,7 +7,6 @@
 
 import UIKit
 import Firebase
-import GooglePlaces
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,12 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().tintColor = .white
-        
-        GMSPlacesClient.provideAPIKey("AIzaSyAhd73rF4yh1Lj0wHGM7kkjr4hZOfpJy_E")//We give our client to api
         FirebaseApp.configure()
-        
-        
-
         return true
     }
 
