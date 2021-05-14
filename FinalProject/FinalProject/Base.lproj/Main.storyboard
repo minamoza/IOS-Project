@@ -477,7 +477,7 @@
             </objects>
             <point key="canvasLocation" x="-481" y="252"/>
         </scene>
-        <!--Item 2-->
+        <!--Search-->
         <scene sceneID="FXt-OY-W2B">
             <objects>
                 <viewController id="u5D-hQ-Zet" customClass="SearchVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -616,7 +616,7 @@
                             <constraint firstItem="u7i-bQ-AC6" firstAttribute="top" secondItem="cVf-FA-mtH" secondAttribute="bottom" symbolic="YES" id="j0S-XK-qLg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="wsu-NA-MHE"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="wsu-NA-MHE"/>
                     <connections>
                         <outlet property="search_bar" destination="u7i-bQ-AC6" id="00B-cS-2HP"/>
                         <outletCollection property="cards" destination="dwM-xP-SgP" collectionClass="NSMutableArray" id="Axh-bH-TGb"/>
@@ -739,7 +739,7 @@ of your dish now
             </objects>
             <point key="canvasLocation" x="802.89855072463774" y="1751.7857142857142"/>
         </scene>
-        <!--Item-->
+        <!--Shopping List-->
         <scene sceneID="S80-7j-qtb">
             <objects>
                 <tableViewController id="8X8-jL-Uiw" customClass="ShoppingLIstTVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -807,7 +807,7 @@ of your dish now
                             <outlet property="delegate" destination="8X8-jL-Uiw" id="o40-4u-AnB"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Vhx-3t-ly8"/>
+                    <tabBarItem key="tabBarItem" title="Shopping List" id="Vhx-3t-ly8"/>
                     <connections>
                         <outlet property="myTableView" destination="HnL-N2-8n4" id="A4v-LQ-JHK"/>
                     </connections>
@@ -2105,11 +2105,11 @@ rising time...
             </objects>
             <point key="canvasLocation" x="-1978" y="1042"/>
         </scene>
-        <!--Item-->
+        <!--Create-->
         <scene sceneID="EAK-kt-ReE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FxZ-T9-WYB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5q5-Tj-Cbb"/>
+                    <tabBarItem key="tabBarItem" title="Create" id="5q5-Tj-Cbb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gwa-hR-KjQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
