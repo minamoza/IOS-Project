@@ -11,13 +11,9 @@
 		2E19593E264D196700421748 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E19593D264D196700421748 /* LocationVC.swift */; };
 		2E195941264D1FD900421748 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E195940264D1FD900421748 /* ResultsVC.swift */; };
 		2E195957264D25F700421748 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E195956264D25F700421748 /* GooglePlacesManager.swift */; };
-		2E4B01FE26483CB1007FE30C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B01FD26483CB1007FE30C /* SearchVC.swift */; };
 		2E4B020926483F2A007FE30C /* WelcomPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B020826483F2A007FE30C /* WelcomPageCell.swift */; };
 		2E4B020E2648430A007FE30C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E4B020D2648430A007FE30C /* GoogleService-Info.plist */; };
 		2E8920FC2649AC85007183DF /* ProfileFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8920FB2649AC85007183DF /* ProfileFirstVC.swift */; };
-		2EB104AD264AFAB700835714 /* CreateFirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104A7264AF9FD00835714 /* CreateFirstPageVC.swift */; };
-		2EB104AF264AFABA00835714 /* CreateSecondPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104A8264AFA0300835714 /* CreateSecondPageVC.swift */; };
-		2EB104B1264AFAC000835714 /* CreateThirdPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104A9264AFA0700835714 /* CreateThirdPageVC.swift */; };
 		2EB104B5264AFB7800835714 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104B4264AFB7800835714 /* RegisterVC.swift */; };
 		2EB104B9264B055D00835714 /* SignINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104B8264B055D00835714 /* SignINVC.swift */; };
 		2EB104BC264B231800835714 /* MainProfileFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104BB264B231800835714 /* MainProfileFirstVC.swift */; };
@@ -40,13 +36,9 @@
 		2E19593D264D196700421748 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		2E195940264D1FD900421748 /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 		2E195956264D25F700421748 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
-		2E4B01FD26483CB1007FE30C /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = "../../../../../Desktop/IOS-Project-zhaiss5/FinalProject/FinalProject/SearchVC.swift"; sourceTree = "<group>"; };
 		2E4B020826483F2A007FE30C /* WelcomPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomPageCell.swift; sourceTree = "<group>"; };
 		2E4B020D2648430A007FE30C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E8920FB2649AC85007183DF /* ProfileFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFirstVC.swift; sourceTree = "<group>"; };
-		2EB104A7264AF9FD00835714 /* CreateFirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFirstPageVC.swift; sourceTree = "<group>"; };
-		2EB104A8264AFA0300835714 /* CreateSecondPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSecondPageVC.swift; sourceTree = "<group>"; };
-		2EB104A9264AFA0700835714 /* CreateThirdPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThirdPageVC.swift; sourceTree = "<group>"; };
 		2EB104B4264AFB7800835714 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		2EB104B8264B055D00835714 /* SignINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignINVC.swift; sourceTree = "<group>"; };
 		2EB104BB264B231800835714 /* MainProfileFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileFirstVC.swift; sourceTree = "<group>"; };
@@ -79,9 +71,6 @@
 		2EB104A6264AF98600835714 /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				2EB104A8264AFA0300835714 /* CreateSecondPageVC.swift */,
-				2EB104A9264AFA0700835714 /* CreateThirdPageVC.swift */,
-				2EB104A7264AF9FD00835714 /* CreateFirstPageVC.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -126,7 +115,6 @@
 				396A4E8B2630A3CC0054D611 /* AppDelegate.swift */,
 				396A4E8D2630A3CC0054D611 /* SceneDelegate.swift */,
 				396A4E912630A3CC0054D611 /* Main.storyboard */,
-				2E4B01FD26483CB1007FE30C /* SearchVC.swift */,
 				396A4E942630A3D20054D611 /* Assets.xcassets */,
 				396A4E962630A3D20054D611 /* LaunchScreen.storyboard */,
 				2E4B020D2648430A007FE30C /* GoogleService-Info.plist */,
@@ -317,15 +305,11 @@
 			files = (
 				2EB104BC264B231800835714 /* MainProfileFirstVC.swift in Sources */,
 				2E195941264D1FD900421748 /* ResultsVC.swift in Sources */,
-				2EB104AD264AFAB700835714 /* CreateFirstPageVC.swift in Sources */,
-				2EB104AF264AFABA00835714 /* CreateSecondPageVC.swift in Sources */,
-				2E4B01FE26483CB1007FE30C /* SearchVC.swift in Sources */,
 				39AE66CB2648290300E6B2CE /* RecipesCollectionCell.swift in Sources */,
 				39AE72962641339300703327 /* WelcomVC.swift in Sources */,
 				39AE729B264133A700703327 /* HomeVC.swift in Sources */,
 				2E4B020926483F2A007FE30C /* WelcomPageCell.swift in Sources */,
 				2E19593E264D196700421748 /* LocationVC.swift in Sources */,
-				2EB104B1264AFAC000835714 /* CreateThirdPageVC.swift in Sources */,
 				2E195957264D25F700421748 /* GooglePlacesManager.swift in Sources */,
 				396A4E8C2630A3CC0054D611 /* AppDelegate.swift in Sources */,
 				396A4E8E2630A3CC0054D611 /* SceneDelegate.swift in Sources */,
