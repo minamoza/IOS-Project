@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class CreateFirstPageVC: UIViewController {
-
+    
+    var user: User?
+    static var recipeData: [Any] = []
+    let ref = Database.database().reference()
     
     @IBOutlet weak var nameRecipeTF: UITextField!
     @IBOutlet weak var uploadPhotoLayer: UIView!
@@ -61,19 +67,33 @@ class CreateFirstPageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        uploadPhotoLayer.layer.cornerRadius = 5
-        uploadPhotoLayer.layer.borderWidth = 1
-        uploadPhotoLayer.layer.borderColor = UIColor.systemPurple.cgColor
-        nextButton.layer.cornerRadius = 5
-        nameRecipeTF.borderStyle = .none
-        nameRecipeTF.attributedPlaceholder = NSAttributedString.init(string:"E.g Grandma's apple pie", attributes: [ NSAttributedString.Key.foregroundColor:UIColor.darkGray, NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20)])
+//        uploadPhotoLayer.layer.cornerRadius = 5
+//        uploadPhotoLayer.layer.borderWidth = 1
+//        uploadPhotoLayer.layer.borderColor = UIColor.systemPurple.cgColor
+//        nextButton.layer.cornerRadius = 5
+//        nameRecipeTF.borderStyle = .none
+//        nameRecipeTF.attributedPlaceholder = NSAttributedString.init(string:"E.g Grandma's apple pie", attributes: [ NSAttributedString.Key.foregroundColor:UIColor.darkGray, NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20)])
         
 //        nameRecipeTF.attributedPlaceholder = NSAttributedString.init(string:"E.g Grandma's apple pie", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20)])
         
         
     }
     
+    func register(){
+        if nameRecipeTF.text != ""{
+            user = Auth.auth().currentUser
+//            RecipeData.init(author: (user?.email)!, title: nameRecipeTF.text!)
+            CreateFirstPageVC.recipeData.append(nameRecipeTF.text!)
+        }
+    }
     
-   
-
+    func save(recipeDate: [Any]){
+        print(recipeDate)
+        let recipe = RecipeData(portion: recipeDate[1] as! String, title: recipeDate[0] as! String, prepTime: recipeDate[2] as! String, ingredients: recipeDate[3] as! [String])
+        ref.child("recipe").childByAutoId().setValue(recipe.dict)
+    }
+    
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        register()
+    }
 }

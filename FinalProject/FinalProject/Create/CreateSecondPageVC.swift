@@ -7,8 +7,11 @@
 
 import UIKit
 
-class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+class CreateSecondPageVC: CreateFirstPageVC, UIPickerViewDataSource, UIPickerViewDelegate{
+    
+    var portion: String?
+    var time: String?
+    var buttonType: UIButton?
     
     @IBOutlet weak var easyButton: UIButton!
     @IBOutlet weak var mediumButton: UIButton!
@@ -31,26 +34,24 @@ class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var prepTimePickerView: UIPickerView!
     @IBOutlet weak var prepTimeIndex: UIButton!
     
-    let hours = ["0 hours", "1 hours", "2 hours", "3 hours"]
-    let minutes = ["0 min", "1 min", "3 min", "4 min"]
+    let type = ["hour", "minute"]
+    let hours = ["1", "2", "3","4", "5", "6", "7", "8", "9", "10",
+                 "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+                 "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+                 "31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+                 "41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
+                 "51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
     
     //Baking Time
 
     @IBOutlet weak var bakingTimeButton: UIButton!
-    @IBOutlet weak var bakingTimePickerView: UIPickerView!
     @IBOutlet weak var bakingTimeIndex: UIButton!
-    
-    let hours2 = ["0 hours", "1 hours", "2 hours", "3 hours"]
-    let minutes2 = ["0 min", "1 min", "3 min", "4 min"]
+
     
     //Resting Time
     
     @IBOutlet weak var restingTimeButton: UIButton!
-    @IBOutlet weak var restingTimePickerView: UIPickerView!
     @IBOutlet weak var restingTimeIndex: UIButton!
-    
-    let hours3 = ["0 hours", "1 hours", "2 hours", "3 hours"]
-    let minutes3 = ["0 min", "1 min", "3 min", "4 min"]
     
     
     override func viewDidLoad() {
@@ -63,32 +64,15 @@ class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerView
         prepTimePickerView.delegate = self
         prepTimePickerView.dataSource = self
         
-        bakingTimePickerView.isHidden = true
-        bakingTimePickerView.delegate = self
-        bakingTimePickerView.dataSource = self
-        
-        restingTimePickerView.isHidden = true
-        restingTimePickerView.delegate = self
-        restingTimePickerView.dataSource = self
-        
-        
         portionTypePickerView.tag = 1
         prepTimePickerView.tag = 2
-        bakingTimePickerView.tag = 3
-        restingTimePickerView.tag = 4
         
         super.viewDidLoad()
-        
-//        let vc = UIViewController()
-//        vc.modalPresentationStyle = .fullScreen
-//        self.present(vc, animated: true, completion: nil)
         
         easyButton.layer.cornerRadius = 3
         mediumButton.layer.cornerRadius = 3
         hardButton.layer.cornerRadius = 3
         nextButton2.layer.cornerRadius = 5
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func portionTypePressed(_ sender: UIButton) {
@@ -97,23 +81,23 @@ class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerView
         }
     }
     @IBAction func prepTimePressed(_ sender: UIButton) {
+        buttonType = prepTimeButton
         if prepTimePickerView.isHidden{
             prepTimePickerView.isHidden = false
         }
     }
     @IBAction func bakingTimePressed(_ sender: UIButton) {
-        if bakingTimePickerView.isHidden{
-            bakingTimePickerView.isHidden = false
+        buttonType = bakingTimeButton
+        if prepTimePickerView.isHidden{
+            prepTimePickerView.isHidden = false
         }
     }
     @IBAction func restingTimePressed(_ sender: UIButton) {
-        if restingTimePickerView.isHidden{
-            restingTimePickerView.isHidden = false
+        buttonType = restingTimeButton
+        if prepTimePickerView.isHidden{
+            prepTimePickerView.isHidden = false
         }
     }
-    
-    
-    
    
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 2
@@ -133,40 +117,15 @@ class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerView
                 return hours.count
             }
             else{
-                return minutes.count
-            }
-        case 3:
-            if component == 0{
-                return hours2.count
-            }
-            else{
-                return minutes2.count
-            }
-        case 4:
-            if component == 0{
-                return hours3.count
-            }
-            else{
-                return minutes3.count
+                return type.count
             }
         default:
             return 1
         }
-//        if component == 0{
-//            return portionTypesIndex.count
-//        }
-//        else{
-//            return portionTypes.count
-//        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        if component == 0{
-//            return portionTypesIndex[row]
-//        }
-//        else{
-//            return portionTypes[row]
-//        }
+
         switch pickerView.tag {
         case 1:
             if component == 0{
@@ -180,21 +139,7 @@ class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerView
                 return hours[row]
             }
             else{
-                return minutes[row]
-            }
-        case 3:
-            if component == 0{
-                return hours2[row]
-            }
-            else{
-                return minutes2[row]
-            }
-        case 4:
-            if component == 0{
-                return hours3[row]
-            }
-            else{
-                return minutes3[row]
+                return type[row]
             }
         default:
             return "Data not found"
@@ -206,7 +151,6 @@ class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerView
         case 1:
             if component == 0{
                 portionIndexButton.setTitle(portionTypesIndex[row], for: .normal)
-                //portionTypeButton.setTitle(portionTypes[row], for: .normal)
                 portionTypePickerView.isHidden = true
             }
             else{
@@ -215,37 +159,47 @@ class CreateSecondPageVC: UIViewController, UIPickerViewDataSource, UIPickerView
             }
         case 2:
             if component == 0{
-                prepTimeIndex.setTitle(hours[row], for: .normal)
-                //portionTypeButton.setTitle(portionTypes[row], for: .normal)
-                prepTimePickerView.isHidden = true
-            }
-            else{
-                prepTimeButton.setTitle(minutes[row], for: .normal)
-                prepTimePickerView.isHidden = true
-            }
-        case 3:
-            if component == 0{
-                bakingTimeIndex.setTitle(hours2[row], for: .normal)
-                //portionTypeButton.setTitle(portionTypes[row], for: .normal)
-                bakingTimePickerView.isHidden = true
-            }
-            else{
-                bakingTimeButton.setTitle(minutes2[row], for: .normal)
-                bakingTimePickerView.isHidden = true
-            }
-        case 4:
-            if component == 0{
-                restingTimeIndex.setTitle(hours3[row], for: .normal)
-                //portionTypeButton.setTitle(portionTypes[row], for: .normal)
-                restingTimePickerView.isHidden = true
-            }
-            else{
-                restingTimeButton.setTitle(minutes3[row], for: .normal)
-                restingTimePickerView.isHidden = true
+                switch buttonType {
+                case prepTimeButton:
+                    prepTimeButton.setTitle(hours[row], for: .normal)
+                    prepTimePickerView.isHidden = true
+                case bakingTimeButton:
+                    bakingTimeButton.setTitle(hours[row], for: .normal)
+                    prepTimePickerView.isHidden = true
+                case restingTimeButton:
+                    restingTimeButton.setTitle(hours[row], for: .normal)
+                    prepTimePickerView.isHidden = true
+                default:
+                    prepTimeButton.setTitle(hours[row], for: .normal)
+                }
+            }else{
+                switch buttonType {
+                case prepTimeButton:
+                    prepTimeIndex.setTitle(type[row], for: .normal)
+                    prepTimePickerView.isHidden = true
+                case bakingTimeButton:
+                    bakingTimeIndex.setTitle(type[row], for: .normal)
+                    prepTimePickerView.isHidden = true
+                case restingTimeButton:
+                    restingTimeIndex.setTitle(type[row], for: .normal)
+                    prepTimePickerView.isHidden = true
+                default:
+                    prepTimeIndex.setTitle(type[row], for: .normal)
+                }
             }
         default:
             break
         }
-        
+        portion = "\(portionTypesIndex[row]) \(portionTypes[row])"
+        time = "\(hours[row]) \(type[row])"
+    }
+    
+    func register1(){
+        CreateSecondPageVC.recipeData.append(portion!)
+        CreateSecondPageVC.recipeData.append(time!)
+    }
+    
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        register1()
     }
 }
