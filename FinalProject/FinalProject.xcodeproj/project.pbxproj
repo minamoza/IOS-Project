@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E4B01FE26483CB1007FE30C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B01FD26483CB1007FE30C /* SearchVC.swift */; };
-		2E4B020326483CBA007FE30C /* CreateFirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B020026483CBA007FE30C /* CreateFirstPageVC.swift */; };
-		2E4B020426483CBA007FE30C /* CreateSecondPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B020126483CBA007FE30C /* CreateSecondPageVC.swift */; };
-		2E4B020526483CBA007FE30C /* CreateThirdPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B020226483CBA007FE30C /* CreateThirdPageVC.swift */; };
+		2E19593A264CFD5700421748 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E195939264CFD5700421748 /* EditProfileVC.swift */; };
+		2E19593E264D196700421748 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E19593D264D196700421748 /* LocationVC.swift */; };
+		2E195941264D1FD900421748 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E195940264D1FD900421748 /* ResultsVC.swift */; };
+		2E195957264D25F700421748 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E195956264D25F700421748 /* GooglePlacesManager.swift */; };
 		2E4B020926483F2A007FE30C /* WelcomPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B020826483F2A007FE30C /* WelcomPageCell.swift */; };
 		2E4B020E2648430A007FE30C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E4B020D2648430A007FE30C /* GoogleService-Info.plist */; };
+		2E8920FC2649AC85007183DF /* ProfileFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8920FB2649AC85007183DF /* ProfileFirstVC.swift */; };
+		2EB104B5264AFB7800835714 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104B4264AFB7800835714 /* RegisterVC.swift */; };
+		2EB104B9264B055D00835714 /* SignINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104B8264B055D00835714 /* SignINVC.swift */; };
+		2EB104BC264B231800835714 /* MainProfileFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB104BB264B231800835714 /* MainProfileFirstVC.swift */; };
 		36A20C6E24D2D260621F1E6F /* Pods_FinalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC4644425F4F9247509356B /* Pods_FinalProject.framework */; };
 		3911AA2126458228009FF47E /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3911AA1F26458228009FF47E /* HomeCollectionCell.swift */; };
 		396A4E8C2630A3CC0054D611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A4E8B2630A3CC0054D611 /* AppDelegate.swift */; };
@@ -28,12 +32,16 @@
 /* Begin PBXFileReference section */
 		1FC4644425F4F9247509356B /* Pods_FinalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		225E0F901285B8949CA104C6 /* Pods-FinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.debug.xcconfig"; path = "Target Support Files/Pods-FinalProject/Pods-FinalProject.debug.xcconfig"; sourceTree = "<group>"; };
-		2E4B01FD26483CB1007FE30C /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = "../../../../../Desktop/IOS-Project-zhaiss5/FinalProject/FinalProject/SearchVC.swift"; sourceTree = "<group>"; };
-		2E4B020026483CBA007FE30C /* CreateFirstPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateFirstPageVC.swift; path = "../../../../../Desktop/IOS-Project-zhaiss5/FinalProject/FinalProject/CreateFirstPageVC.swift"; sourceTree = "<group>"; };
-		2E4B020126483CBA007FE30C /* CreateSecondPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateSecondPageVC.swift; path = "../../../../../Desktop/IOS-Project-zhaiss5/FinalProject/FinalProject/CreateSecondPageVC.swift"; sourceTree = "<group>"; };
-		2E4B020226483CBA007FE30C /* CreateThirdPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateThirdPageVC.swift; path = "../../../../../Desktop/IOS-Project-zhaiss5/FinalProject/FinalProject/CreateThirdPageVC.swift"; sourceTree = "<group>"; };
+		2E195939264CFD5700421748 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		2E19593D264D196700421748 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		2E195940264D1FD900421748 /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
+		2E195956264D25F700421748 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
 		2E4B020826483F2A007FE30C /* WelcomPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomPageCell.swift; sourceTree = "<group>"; };
 		2E4B020D2648430A007FE30C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E8920FB2649AC85007183DF /* ProfileFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFirstVC.swift; sourceTree = "<group>"; };
+		2EB104B4264AFB7800835714 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		2EB104B8264B055D00835714 /* SignINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignINVC.swift; sourceTree = "<group>"; };
+		2EB104BB264B231800835714 /* MainProfileFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileFirstVC.swift; sourceTree = "<group>"; };
 		3911AA1F26458228009FF47E /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		396A4E882630A3CC0054D611 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396A4E8B2630A3CC0054D611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +68,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EB104A6264AF98600835714 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		2EB104B3264AFAE800835714 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2E8920FB2649AC85007183DF /* ProfileFirstVC.swift */,
+				2EB104B4264AFB7800835714 /* RegisterVC.swift */,
+				2EB104B8264B055D00835714 /* SignINVC.swift */,
+				2EB104BB264B231800835714 /* MainProfileFirstVC.swift */,
+				2E195939264CFD5700421748 /* EditProfileVC.swift */,
+				2E19593D264D196700421748 /* LocationVC.swift */,
+				2E195940264D1FD900421748 /* ResultsVC.swift */,
+				2E195956264D25F700421748 /* GooglePlacesManager.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		396A4E7F2630A3CC0054D611 = {
 			isa = PBXGroup;
 			children = (
@@ -84,11 +114,7 @@
 				39AE72922641335400703327 /* View Controllers */,
 				396A4E8B2630A3CC0054D611 /* AppDelegate.swift */,
 				396A4E8D2630A3CC0054D611 /* SceneDelegate.swift */,
-				2E4B020026483CBA007FE30C /* CreateFirstPageVC.swift */,
-				2E4B020126483CBA007FE30C /* CreateSecondPageVC.swift */,
-				2E4B020226483CBA007FE30C /* CreateThirdPageVC.swift */,
 				396A4E912630A3CC0054D611 /* Main.storyboard */,
-				2E4B01FD26483CB1007FE30C /* SearchVC.swift */,
 				396A4E942630A3D20054D611 /* Assets.xcassets */,
 				396A4E962630A3D20054D611 /* LaunchScreen.storyboard */,
 				2E4B020D2648430A007FE30C /* GoogleService-Info.plist */,
@@ -100,6 +126,8 @@
 		39AE72922641335400703327 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2EB104B3264AFAE800835714 /* Profile */,
+				2EB104A6264AF98600835714 /* Create */,
 				39AE72942641337900703327 /* Home */,
 				39AE72932641336800703327 /* Welcome */,
 			);
@@ -154,6 +182,7 @@
 				396A4E852630A3CC0054D611 /* Frameworks */,
 				396A4E862630A3CC0054D611 /* Resources */,
 				AAA2B3BFAB7306668694D8D1 /* [CP] Embed Pods Frameworks */,
+				574CC6DA55D2B3912B0240DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +262,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		574CC6DA55D2B3912B0240DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalProject/Pods-FinalProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalProject/Pods-FinalProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinalProject/Pods-FinalProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AAA2B3BFAB7306668694D8D1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,17 +303,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4B01FE26483CB1007FE30C /* SearchVC.swift in Sources */,
-				2E4B020326483CBA007FE30C /* CreateFirstPageVC.swift in Sources */,
+				2EB104BC264B231800835714 /* MainProfileFirstVC.swift in Sources */,
+				2E195941264D1FD900421748 /* ResultsVC.swift in Sources */,
 				39AE66CB2648290300E6B2CE /* RecipesCollectionCell.swift in Sources */,
-				2E4B020426483CBA007FE30C /* CreateSecondPageVC.swift in Sources */,
 				39AE72962641339300703327 /* WelcomVC.swift in Sources */,
 				39AE729B264133A700703327 /* HomeVC.swift in Sources */,
 				2E4B020926483F2A007FE30C /* WelcomPageCell.swift in Sources */,
+				2E19593E264D196700421748 /* LocationVC.swift in Sources */,
+				2E195957264D25F700421748 /* GooglePlacesManager.swift in Sources */,
 				396A4E8C2630A3CC0054D611 /* AppDelegate.swift in Sources */,
 				396A4E8E2630A3CC0054D611 /* SceneDelegate.swift in Sources */,
+				2EB104B9264B055D00835714 /* SignINVC.swift in Sources */,
+				2E8920FC2649AC85007183DF /* ProfileFirstVC.swift in Sources */,
 				3911AA2126458228009FF47E /* HomeCollectionCell.swift in Sources */,
-				2E4B020526483CBA007FE30C /* CreateThirdPageVC.swift in Sources */,
+				2E19593A264CFD5700421748 /* EditProfileVC.swift in Sources */,
+				2EB104B5264AFB7800835714 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +380,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,6 +442,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -399,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -417,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42RNWNGW2D;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -438,6 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42RNWNGW2D;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
